@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R Tech Solutions — IT Consulting & Web Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="logo-mark">
+    <div>
+      <img src="assets/logo2.png" alt="R Tech Solutions Logo" width="40" height="40">
+    </div>
+    <div class="logo-text">Tech <span>Solutions</span></div>
+  </div>
+  <div class="nav-links">
+    <a href="#layanan">Layanan</a>
+    <a href="#portofolio">Portofolio</a>
+    <a href="#proses">Proses</a>
+    <a href="#stack">Tech Stack</a>
+    <a href="#testimoni">Klien</a>
+  </div>
+  <a href="#cta" class="nav-cta">Konsultasi Gratis</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+
+  <!-- UPPER: two-col grid -->
+  <div class="hero-upper">
+    <!-- LEFT: text -->
+    <div class="hero-content">
+      <div class="eyebrow">IT Consulting &amp; Custom Development</div>
+      <h1>Bangun sistem digital yang <span class="grad">benar-benar bekerja</span> untuk bisnis Anda</h1>
+      <p class="hero-desc">R Tech Solutions membangun website, sistem custom, dan automation untuk bisnis yang serius bertumbuh — dari company profile hingga platform internal yang kompleks.</p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">Mulai Proyek Anda →</a>
+        <a href="#layanan" class="btn-secondary">Lihat Layanan</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">10+</div><div class="label">Proyek selesai</div></div>
+        <div class="stat"><div class="num">100%</div><div class="label">Custom-built</div></div>
+        <div class="stat"><div class="num">24/7</div><div class="label">Support teknis</div></div>
+      </div>
+    </div>
+    <!-- RIGHT: 3D canvas -->
+    <div class="hero-visual">
+    </div>
+  </div>
+
+  <!-- PROMO BAR: full-width strip at bottom of hero -->
+  <div class="hero-promo-bar">
+    <div class="promo-carousel" id="promoCarousel">
+      <div class="promo-track" id="promoTrack">
+        <div class="promo-slide">
+          <div class="promo-icon">🔥</div>
+          <div class="promo-text">
+            <span class="promo-badge">Promo Akhir Bulan</span>
+            <h4>Diskon 20% Paket Company Profile</h4>
+            <p>Berlaku untuk pemesanan bulan ini</p>
+          </div>
+          <a href="#cta" class="promo-arrow">Klaim →</a>
+        </div>
+        <div class="promo-slide">
+          <div class="promo-icon">⚡</div>
+          <div class="promo-text">
+            <span class="promo-badge">Layanan Baru</span>
+            <h4>Paket Automation &amp; Scraping</h4>
+            <p>Mulai dari kebutuhan data harian Anda</p>
+          </div>
+          <a href="#layanan" class="promo-arrow">Lihat →</a>
+        </div>
+        <div class="promo-slide">
+          <div class="promo-icon">🎯</div>
+          <div class="promo-text">
+            <span class="promo-badge">Slot Terbatas</span>
+            <h4>Konsultasi Gratis Bulan Ini</h4>
+            <p>Hanya tersedia untuk 5 klien pertama</p>
+          </div>
+          <a href="#cta" class="promo-arrow">Daftar →</a>
+        </div>
+      </div>
+      <div class="promo-controls">
+        <div class="promo-dots" id="promoDots"></div>
+        <div class="promo-nav-btns">
+          <button class="promo-nav-btn" id="promoPrev" aria-label="Sebelumnya">&#8249;</button>
+          <button class="promo-nav-btn" id="promoNext" aria-label="Berikutnya">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT MARQUEE -->
+<section class="clients">
+  <span class="section-tag" style="text-align:center;display:block;padding:0 6%;margin-bottom:32px;">Dipercaya Oleh</span>
+  <div class="clients-fade-l"></div>
+  <div class="clients-fade-r"></div>
+  <div class="marquee-track">
+    <!-- Set 1 -->
+    <div class="marquee-group">
+      <div class="client-logo"><img src="assets/citanusalogo.png" alt="Cita Nusa Logo"></div>
+      <div class="client-logo"><img src="assets/logo_coco.png" alt="Coco Digital Logo"></div>
+      <div class="client-logo"><img src="assets/yamaha-logo.png.svg" alt="Yamaha Logo"></div>
+      <div class="client-logo"><img src="assets/KakoLogo.png" alt="Kakao all work"></div>
+    </div>
+    <!-- Set 2 (duplikat, wajib buat looping mulus) -->
+    <div class="marquee-group" aria-hidden="true">
+      <div class="client-logo"><img src="assets/citanusalogo.png" alt="" aria-hidden="true"></div>
+      <div class="client-logo"><img src="assets/logo_coco.png" alt="" aria-hidden="true"></div>
+      <div class="client-logo"><img src="assets/yamaha-logo.png.svg" alt="" aria-hidden="true"></div>
+      <div class="client-logo"><img src="assets/KakoLogo.png" alt="" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="layanan">
+  <div class="section-head center">
+    <span class="section-tag">Layanan</span>
+    <h2>Satu tim, semua kebutuhan teknis Anda</h2>
+    <p>Dari ide hingga sistem yang berjalan di production — kami pegang end-to-end.</p>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <h3>Website &amp; Company Profile</h3>
+      <p>Website korporat yang cepat, responsif, dan dirancang untuk konversi — dibangun dengan Laravel &amp; desain modern.</p>
+      <a href="#" class="service-link">Pelajari Lebih →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <h3>Sistem &amp; Aplikasi Custom</h3>
+      <p>Aplikasi internal, manajemen data, hingga sistem multi-tenant — disesuaikan dengan alur kerja bisnis Anda.</p>
+      <a href="#" class="service-link">Pelajari Lebih →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔗</div>
+      <h3>API &amp; Integrasi</h3>
+      <p>Backend FastAPI/Laravel yang menghubungkan sistem Anda dengan layanan pihak ketiga secara aman dan stabil.</p>
+      <a href="#" class="service-link">Pelajari Lebih →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portofolio">
+  <div class="section-head">
+    <span class="section-tag">Portofolio</span>
+    <h2>Proyek yang sudah kami bangun</h2>
+    <p>Sebagian sistem dan website yang kami kerjakan untuk klien dari berbagai industri.</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-card">
+      <div class="portfolio-thumb thumb-1"><span class="ptag">TikTok Scraper</span></div>
+      <div class="portfolio-body">
+        <span class="portfolio-cat">Web App &amp; Automation</span>
+        <h3>Hashtag Scraping System</h3>
+        <p>Sistem scraping TikTok berbasis hashtag dengan export Excel, validasi, dan dashboard DataTables.</p>
+        <div class="portfolio-stack"><span>Laravel</span><span>FastAPI</span><span>MySQL</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-thumb thumb-2"><span class="ptag">Company Profile</span></div>
+      <div class="portfolio-body">
+        <span class="portfolio-cat">Website Korporat</span>
+        <h3>Digital Agency Profile Site</h3>
+        <p>Website multi-halaman dengan parallax, marquee client logo, dan desain premium custom.</p>
+        <div class="portfolio-stack"><span>Laravel</span><span>Blade</span><span>Nginx</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-thumb thumb-3"><span class="ptag">3D Portfolio</span></div>
+      <div class="portfolio-body">
+        <span class="portfolio-cat">Personal Branding</span>
+        <h3>Interactive 3D Portfolio</h3>
+        <p>Website portofolio dengan hero Three.js interaktif dan animasi Framer Motion.</p>
+        <div class="portfolio-stack"><span>React</span><span>Three.js</span><span>TypeScript</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-thumb thumb-4"><span class="ptag">SaaS Membership</span></div>
+      <div class="portfolio-body">
+        <span class="portfolio-cat">Sistem Custom</span>
+        <h3>Multi-Tenant Membership System</h3>
+        <p>Sistem manajemen membership dengan 3 level role dan modul invoicing terintegrasi.</p>
+        <div class="portfolio-stack"><span>Laravel</span><span>Multi-tenant</span></div>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-thumb thumb-5"><span class="ptag">Sales Proposal</span></div>
+      <div class="portfolio-body">
+        <span class="portfolio-cat">Dokumen Bisnis</span>
+        <h3>Proposal &amp; PDF Generation</h3>
+        <p>Sistem generate proposal penjualan profesional otomatis dalam format PDF.</p>
+        <div class="portfolio-stack"><span>Python</span><span>ReportLab</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="proses">
+  <div class="section-head">
+    <span class="section-tag">Cara Kerja</span>
+    <h2>Proses yang jelas, dari hari pertama</h2>
+  </div>
+  <div class="process-list">
+    <div class="process-row">
+      <div class="process-num">01</div>
+      <h3>Konsultasi &amp; Scoping</h3>
+      <p>Kita bahas kebutuhan bisnis Anda, susun scope yang jelas, dan tentukan timeline serta budget bersama.</p>
+    </div>
+    <div class="process-row">
+      <div class="process-num">02</div>
+      <h3>Desain &amp; Arsitektur</h3>
+      <p>Rancang struktur sistem dan tampilan yang sesuai brand Anda, divalidasi sebelum masuk development.</p>
+    </div>
+    <div class="process-row">
+      <div class="process-num">03</div>
+      <h3>Development</h3>
+      <p>Dibangun bertahap dengan update progres berkala, sehingga Anda selalu tahu posisi proyek.</p>
+    </div>
+    <div class="process-row">
+      <div class="process-num">04</div>
+      <h3>Deploy &amp; Support</h3>
+      <p>Sistem live di server production dengan dukungan teknis berkelanjutan setelah serah terima.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="stack" id="stack">
+  <div class="section-head">
+    <span class="section-tag">Tech Stack</span>
+    <h2>Teknologi yang teruji di production</h2>
+  </div>
+  <div class="stack-grid">
+    <div class="stack-pill">Laravel</div>
+    <div class="stack-pill">Python / FastAPI</div>
+    <div class="stack-pill">React + TypeScript</div>
+    <div class="stack-pill">MySQL / PostgreSQL</div>
+    <div class="stack-pill">Three.js</div>
+    <div class="stack-pill">Nginx</div>
+    <div class="stack-pill">Docker</div>
+    <div class="stack-pill">REST API</div>
+    <div class="stack-pill">VPS Deployment</div>
+    <div class="stack-pill">Tailwind CSS</div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial" id="testimoni">
+  <div class="section-head">
+    <span class="section-tag">Klien Bicara</span>
+    <h2>Dipercaya oleh tim yang serius bertumbuh</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p>"Komunikasi jelas dari awal sampai akhir. Website company profile kami selesai tepat waktu dan persis seperti yang dibayangkan."</p>
+      <div class="testi-who">
+        <div class="testi-avatar">A</div>
+        <div><div class="testi-name">Tim Operasional</div><div class="testi-role">Perusahaan Manufaktur</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <p>"Sistem custom yang dibangun benar-benar mengikuti alur kerja kami, bukan kami yang harus menyesuaikan ke sistem."</p>
+      <div class="testi-who">
+        <div class="testi-avatar">B</div>
+        <div><div class="testi-name">Manajemen</div><div class="testi-role">Klien Subkontrak SaaS</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <h2>Siap membangun sistem yang tepat?</h2>
+  <p>Konsultasikan kebutuhan proyek Anda — gratis, tanpa komitmen. Kita bahas solusi terbaik untuk bisnis Anda.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/62" class="btn-primary">Chat via WhatsApp →</a>
+    <a href="mailto:hello@rtechsolutions.id" class="btn-secondary">Kirim Email</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-mark">
+        <div class="logo-text">R Tech <span>Solutions</span></div>
+      </div>
+      <p>Konsultan IT dan pengembangan web untuk bisnis yang serius bertumbuh. Kami bangun sistem, bukan sekadar tampilan.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+        <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-btn" aria-label="WhatsApp">WA</a>
+        <a href="#" class="social-btn" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#proses">Proses Kerja</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
+        <li><a href="#testimoni">Klien</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Layanan</h4>
+      <ul>
+        <li><a href="#layanan">Website &amp; Company Profile</a></li>
+        <li><a href="#layanan">Sistem Custom</a></li>
+        <li><a href="#layanan">API &amp; Integrasi</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <div class="footer-address">
+        <strong>R Tech Solutions</strong>
+        Jl. Surya Permata V blok S1 No 6 RT 11,<br>
+        Kec. Bekasi Selatan,<br>
+        Kota Bekasi, Jawa Barat 17146s
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="gray">© 2026 R Tech Solutions. All rights reserved.</div>
+    <div class="footer-bottom-links">
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat &amp; Ketentuan</a>
+    </div>
+  </div>
+</footer>
+
+<!-- THREE.js loaded locally to avoid blocked CDN by tracking prevention -->
+<script src="assets/three/three.min.js"></script>
+<script src="/js/script.js"></script>
+
+</body>
+</html>
