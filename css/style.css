@@ -210,7 +210,7 @@
 
   /* SERVICES */
   .services{background:var(--bg);}
-  .service-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .service-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
   .service-card{
     background:#fff; padding:34px 28px; border-radius:16px;
     border:1px solid var(--line);
